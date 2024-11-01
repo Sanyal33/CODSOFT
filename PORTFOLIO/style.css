@@ -1,0 +1,185 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-family: cursive;
+}
+
+/* Navigation Bar */
+.navbar {
+    overflow: hidden;
+    background-color: #026346; 
+}
+
+.navbar a {
+    float: left;
+    font-size: 15px;
+    color: rgb(247, 242, 242);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: rgb(69, 255, 63);
+}
+
+/* Column Container */
+.container {
+    padding: 64px;
+}
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-66 {
+    flex: 66.66666%;
+    padding: 20px;
+}
+
+.column-33 {
+    flex: 33.33333%;
+    padding: 20px;
+}
+
+/* Font Sizes */
+.large-font {
+    font-size: 48px;
+}
+
+.xlarge-font {
+    font-size: 64px;
+}
+
+/* Button Styling */
+.button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #04AA6D;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 1000px) {
+    .column-66, .column-33 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Section Styling */
+section {
+    padding: 2em;
+    max-width: 2000px;
+    margin: justify;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+#skills li {
+    background: #f4f4f4;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 150px; /* Allow items to grow and shrink, with a base size of 150px */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    #skills li {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    #skills li {
+        flex: 1 1 45%; /* Two items per row on medium screens */
+    }
+}
+
+@media (min-width: 901px) {
+    #skills li {
+        flex: 1 1 30%; /* Three items per row on larger screens */
+    }
+}
+
+/* Projects Section */
+.project {
+    margin-bottom: -5px;
+    text-align: left;
+}
+
+/* Resume Link */
+#resume a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border: 1px solid #333;
+    border-radius: 30px;
+}
+
+/* Contact Section */
+#contact p {
+    text-align: left;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
